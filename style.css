@@ -1,0 +1,116 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f0f2f5;
+  margin: 0;
+  padding: 0;
+  transition: background 0.3s, color 0.3s;
+}
+
+body.dark {
+  background: #1e1e1e;
+  color: #f0f0f0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 40px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+body.dark .container {
+  background: #2c2c2c;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+form input, form select, form button {
+  padding: 10px;
+  font-size: 16px;
+}
+
+form input[type="text"], form input[type="datetime-local"] {
+  flex: 1 1 45%;
+}
+
+form button {
+  flex: 1 1 100%;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #45a049;
+}
+
+.filters {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.filters button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  background: #e8e8e8;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: move;
+}
+
+body.dark li {
+  background: #444;
+}
+
+.task-text.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.priority-low {
+  border-left: 5px solid green;
+}
+
+.priority-medium {
+  border-left: 5px solid orange;
+}
+
+.priority-high {
+  border-left: 5px solid red;
+}
+
+.actions button {
+  margin-left: 5px;
+}
+
+.theme-toggle {
+  text-align: right;
+  margin-bottom: 10px;
+}
